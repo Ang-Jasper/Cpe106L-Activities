@@ -50,9 +50,11 @@ while True:
             if len(student_repository)==0:
                 print("\nNo Information Stored")
             else: 
+                Student_Found = False
                 Search_ID = input("\nEnter Updating Student's ID Number: ")
                 for student in student_repository:
                     if Search_ID == student["ID Number"]:
+                        Student_Found = True
                         print("ID Number found in Data base")
                         name, id, Year = student['Student information']
                         print(f"\nCurrent info: Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
@@ -63,8 +65,8 @@ while True:
                         student['Student information'] = (New_Name, id, New_Yr_level)
                         print("Update Saved") 
                         break
-                    else:
-                        print("\nStudent Does not exist in database")
+                if Student_Found == False:
+                    print("\nStudent Does not exist in database")
             print("________________________________________________________________")
 
     #Search and Remove Students from repository
@@ -72,17 +74,19 @@ while True:
             if len(student_repository)==0:
                 print("\nNo Information Stored")
             else: 
+                Student_Found = False
                 Search_ID = input("\nEnter To be removed Student's ID Number: ")
                 for student in student_repository:
                     if Search_ID == student["ID Number"]:
+                        Student_Fonnd = True
                         print("ID Number found in Data base")
                         name, id, Year = student['Student information']
                         print(f"\nCurrent info: Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
                         student_repository.remove(student)
                         print("Student Removed") 
                         break
-                    else:
-                        print("\nStudent Does not exist in database")
+                if Student_Found == False:
+                    print("\nStudent Does not exist in database")
             print("________________________________________________________________")
 
     #Terminates the program
