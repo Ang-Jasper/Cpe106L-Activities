@@ -78,7 +78,7 @@ while True:
                 Search_ID = input("\nEnter To be removed Student's ID Number: ")
                 for student in student_repository:
                     if Search_ID == student["ID Number"]:
-                        Student_Fonnd = True
+                        Student_Found = True
                         print("ID Number found in Data base")
                         name, id, Year = student['Student information']
                         print(f"\nCurrent info: Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
