@@ -45,7 +45,7 @@ while True:
                 print(f"Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
         print("________________________________________________________________")
 
-    #Search and Updates Students infromation
+    #Search and Updates Students information
     elif action == "3":
             if len(student_repository)==0:
                 print("\nNo Information Stored")
