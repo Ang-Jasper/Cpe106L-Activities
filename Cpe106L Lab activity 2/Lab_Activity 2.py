@@ -1,4 +1,4 @@
-#list made to store student information
+# list made to store student information
 student_repository = []
 
 
@@ -25,79 +25,71 @@ while True:
         ID_Number = input("Student ID Number: ")
         Yr_level = input("Student Year Level: ")
 
-        #tuples to bundle information
+        # tuples to bundle information
         Student_Info = (Name, ID_Number, Yr_level)
 
-        #dictionary made for easy search and storing
+        # dictionary made for easy search and storing
         Student_Tab = { "ID Number": ID_Number, "Student information": Student_Info}
         student_repository.append(Student_Tab)
         print("Info Saved")
         print("________________________________________________________________")
 
-    #List all students in the repository
+    # List all students in the repository
     elif action == "2":
-        if len(student_repository)==0:
+        if len(student_repository) == 0:
             print("\nNo Information Stored")
         else: 
             print("\nList of Students:\n")
             for student in student_repository:
-                name, id, Year = student['Student information']
-                print(f"Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
+                name, id_num, Year = student['Student information']
+                print(f"Student Number: {id_num} | Student Name: {name} | Year level: {Year}\n")
         print("________________________________________________________________")
 
-    #Search and Updates Students information
+    # Search and Updates Students information
     elif action == "3":
-            if len(student_repository)==0:
-                print("\nNo Information Stored")
-            else: 
-                Student_Found = False
-                Search_ID = input("\nEnter Updating Student's ID Number: ")
-                for student in student_repository:
-                    if Search_ID == student["ID Number"]:
-                        Student_Found = True
-                        print("ID Number found in Data base")
-                        name, id, Year = student['Student information']
-                        print(f"\nCurrent info: Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
+        if len(student_repository) == 0:
+            print("\nNo Information Stored")
+        else: 
+            Search_ID = input("\nEnter Updating Student's ID Number: ")
+            
+            for student in student_repository:
+                if Search_ID == student["ID Number"]:
+                    name, id_num, Year = student['Student information']
+                    print(f"\nCurrent info: Student Number: {id_num} | Student Name: {name} | Year level: {Year}\n")
+                    print("\nInput the updated information:")
+                    New_Name = input("Student Name(Last, First Middle): ")
+                    New_Yr_level = input("Student Year Level: ")
+                    student['Student information'] = (New_Name, id_num, New_Yr_level)
+                    print("Update Saved") 
+                    break
+            else:
+                print("\nStudent Does not exist in database")
 
-                        print("\nInput the updated information:")
-                        New_Name = input("Student Name(Last, First Middle): ")
-                        New_Yr_level = input("Student Year Level: ")
-                        student['Student information'] = (New_Name, id, New_Yr_level)
-                        print("Update Saved") 
-                        break
-                if not Student_Found:
-                    print("\nStudent Does not exist in database")
-            print("________________________________________________________________")
+        print("________________________________________________________________")
 
-    #Search and Remove Students from repository
+    # Search and Remove Students from repository
     elif action == "4":
-            if len(student_repository)==0:
-                print("\nNo Information Stored")
-            else: 
-                Student_Found = False
-                Search_ID = input("\nEnter To be removed Student's ID Number: ")
-                for student in student_repository:
-                    if Search_ID == student["ID Number"]:
-                        Student_Found = True
-                        print("ID Number found in Data base")
-                        name, id, Year = student['Student information']
-                        print(f"\nCurrent info: Student Number: {id} | Student Name: {name} | Year level: {Year}\n")
-                        student_repository.remove(student)
-                        print("Student Removed") 
-                        break
-                if not Student_Found:
-                    print("\nStudent Does not exist in database")
-            print("________________________________________________________________")
+        if len(student_repository) == 0:
+            print("\nNo Information Stored")
+        else: 
+            Search_ID = input("\nEnter To be removed Student's ID Number: ")
+            for student in student_repository:
+                if Search_ID == student["ID Number"]:
+                    name, id_num, Year = student['Student information']
+                    print(f"\nCurrent info: Student Number: {id_num} | Student Name: {name} | Year level: {Year}\n")
+                    student_repository.remove(student)
+                    print("Student Removed") 
+                    break
+            else:
+                print("\nStudent Does not exist in database")
 
-    #Terminates the program
+        print("________________________________________________________________")
+
+    # Terminates the program
     elif action == "5":
         print("\n --TERMINATING PROGRAM --")
         break
-        print("________________________________________________________________")
 
-    # Incase the input was invalid
-    else:
-        print("\nINVALID INPUT, PLEASE TRY AGAIN")
-    # Incase the input was invalid
+    # In case the input was invalid
     else:
         print("\nINVALID INPUT, PLEASE TRY AGAIN")
