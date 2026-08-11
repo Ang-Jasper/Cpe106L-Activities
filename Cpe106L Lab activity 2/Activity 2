@@ -50,7 +50,7 @@ while True:
             if len(student_repository)==0:
                 print("\nNo Information Stored")
             else: 
-                Student_Fonnd = False
+                Student_Found = False
                 Search_ID = input("\nEnter Updating Student's ID Number: ")
                 for student in student_repository:
                     if Search_ID == student["ID Number"]:
@@ -74,7 +74,7 @@ while True:
             if len(student_repository)==0:
                 print("\nNo Information Stored")
             else: 
-                Student_Fonnd = False
+                Student_Found = False
                 Search_ID = input("\nEnter To be removed Student's ID Number: ")
                 for student in student_repository:
                     if Search_ID == student["ID Number"]:
