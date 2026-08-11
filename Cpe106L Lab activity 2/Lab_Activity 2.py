@@ -65,7 +65,7 @@ while True:
                         student['Student information'] = (New_Name, id, New_Yr_level)
                         print("Update Saved") 
                         break
-                if Student_Found == False:
+                if not Student_Found:
                     print("\nStudent Does not exist in database")
             print("________________________________________________________________")
 
@@ -85,7 +85,7 @@ while True:
                         student_repository.remove(student)
                         print("Student Removed") 
                         break
-                if Student_Found == False:
+                if not Student_Found:
                     print("\nStudent Does not exist in database")
             print("________________________________________________________________")
 
@@ -95,6 +95,9 @@ while True:
         break
         print("________________________________________________________________")
 
+    # Incase the input was invalid
+    else:
+        print("\nINVALID INPUT, PLEASE TRY AGAIN")
     # Incase the input was invalid
     else:
         print("\nINVALID INPUT, PLEASE TRY AGAIN")
