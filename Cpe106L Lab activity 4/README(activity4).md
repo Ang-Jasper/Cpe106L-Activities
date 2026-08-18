@@ -13,7 +13,7 @@ Method 1:
 ```
 
 ```
-1.Copy paste the code from the PDF , Github or the sourcecode itself
+1.Copy the code from the PDF , Github or the sourcecode itself
 ```
 
 ```
