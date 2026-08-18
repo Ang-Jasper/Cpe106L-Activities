@@ -21,6 +21,11 @@ Method 1:
 ```
 
 ```
+4.The code has built in insturctions such as for selection and what to enter, just follow the prompt.
+```
+
+
+```
 Method 2:
 (Must have a program such as Virtual Studios or any such program that can run
 pythong)
@@ -29,5 +34,8 @@ pythong)
 `1. download the .py file` 
 ```
 ```
-`2. Run the program` 
+`2. Run the program in your desired python file loader` 
+```
+```
+3.The code has built in insturctions such as for selection and what to enter, just follow the prompt.
 ```
