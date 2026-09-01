@@ -5,7 +5,7 @@ profit = 0.00
 
 
 print("Welcome to BETTING ON ADDICTION. Dont wory, no one would know your here....")
-suckers_account = input("Before starting, Enter the account where the money would come from(E-walle - account name): ")
+suckers_account = input("Before starting, Enter the account where the money would come from(E-wallet - account name): ")
 print(f"-connection established-")
 bet = float(input("Enter the amount you are betting today: "))
 profit = profit + bet
