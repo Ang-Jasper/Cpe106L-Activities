@@ -9,7 +9,7 @@ Method 1:
 ```
 
 ```
-1.Copy paste the code from the PDF or on Github
+1.Copy the code from the PDF or on Github
 ```
 
 ```

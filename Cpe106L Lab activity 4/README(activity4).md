@@ -4,7 +4,7 @@ Cpe106L Lab Activity 4
 ```
 Reason why the selected pattern was chosen:
 - Problem: Tracking multiple orders maybe convuluted
-- Solution: Thru the implementation of Singleton it allows all orders to be united in a single shared class or instance which prevent orders to be scattered across the system. Through this any orders can be freely added, updated and tracked in a core area.
+- Solution: Through the implementation of Singleton pattern it allows all orders to be united in a single shared class or instance which prevent orders to be scattered across the system. Through this any orders can be freely added, updated and tracked in a core area.
 
 
 ```
@@ -13,7 +13,7 @@ Method 1:
 ```
 
 ```
-1.Copy paste the code from the PDF , Github or the sourcecode itself
+1.Copy the code from the PDF , Github or the sourcecode itself
 ```
 
 ```
