@@ -11,7 +11,8 @@ How to use the program(Vscode is required to run this code):
 
 
 Note:
-a. if not installed, sklearn needs to be installed first run this command in a terminal (pip install pandas scikit-learn jupyter)
+a. a compiler may not be able to run the code
+
 
 ```
 
